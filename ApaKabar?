@@ -1,0 +1,130 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int kabar, sehat, sibuk, makan;
+    string nama; 
+
+    // Menampilkan pilihan skala kepada pengguna
+    cout << "Siapa nama kamu? ";
+    cin >> nama;
+    
+        cout << "Hai " << nama << ", jawab pertanyaan sesuai keadaan kamu yaa" << endl;
+    cout << "1. Sangat Baik" << endl;
+    cout << "2. Baik" << endl;
+    cout << "3. Cukup" << endl;
+    cout << "4. Buruk" << endl;
+    cout << "5. Sangat Buruk" << endl;
+    cout << "\n" << endl;
+    
+    // Menanyakan kabar
+        cout << "Hai " << nama << ", gimana kabar kamu hari ini?" << endl;   
+
+    // Membaca input kabar pengguna
+    	cin >> kabar;
+    
+	// Menanyakan kesehatan pengguna
+	cout << "Kalau kondisi kesehatan kamu gimana nihh?" << endl;   
+
+    // Membaca input pengguna
+    	cin >> sehat;
+    
+    // Menanyakan kesibukan pengguna
+	cout << "Terus sekarang gimana kesibukannya? Sulit atau mudah?" << endl;   
+
+    // Membaca input pengguna
+    	cin >> sibuk;
+    
+    // Menanyakan makan pengguna
+	cout << "Kalau kebiasaan makan kamu udah teratur belum?" << endl;   
+
+    // Membaca input pengguna
+    	cin >> makan;
+    
+cout << "\n" << endl;		
+    // Menghasilkan kalimat berdasarkan pilihan skala
+    switch (kabar) {
+        case 1:
+            cout << "Wahh, pasti kamu lagi bahagia yaa hari ini! tetap jaga semangat kamu okayy, semoga hal-hal baik selalu menyertai kamu " << nama << endl;
+            break;
+        case 2:
+            cout << "Kamu udah menjalani hari ini dengan baik " << nama << ", tetap semangaat menjalani hari dengan lebih semangat lagi yaaa"<< endl;
+            break;
+        case 3:
+            cout << "Kerja bagus " << nama << ", kamu pasti bisa melakukan sesuatu yang luar biasa kedepannya! selalu percaya kalau hal baik bakal selalu dateng ke kamu yaa." << endl;
+            break;
+        case 4:
+            cout << "Hai " << nama << " , kamu udah keren banget lhoo! tapi kalau capek, istirahat dulu yaa? selalu yakin deh dibalik setiap kesulitan pasti ada kemudahan." << endl;
+            break;
+        case 5:
+            cout << "Haloo " << nama <<" pasti berat yaa menjalani hari ini? tarik nafas dulu yuk! diri kamu itu berharga dan butuh istirahat dulu, kalau kamu ngerasa capek, masih ada teman dan keluarga yang sayang sama kamu nihh!" << endl;
+            break;
+        default:
+            cout << "" << endl;
+	}
+	
+	    // Menghasilkan kalimat berdasarkan pilihan skala
+    switch (sehat) {
+        case 1:
+            cout << "Kelihatannya kamu hari ini jugaa sehat yaa! terus jaga pola hidup kamu biar sehat terus yaa!" << endl;
+            break;
+        case 2:
+            cout << "Oh iyaa, syukurlah kalau hari ini kamu sehat! tetap jaga kesehatan yaaa!" << endl;
+            break;
+        case 3:
+            cout << "Jangan lupa jaga pola hidup kamu yaa! supaya sehat dan nggak kena sakitt!." << endl;
+            break;
+        case 4:
+            cout << "Kamu kurang baik yaa kondisi tubuhnya hari ini? jangan lupa minum banyak air dan makan makanan yang sehaat yaa! kalau semakin parah jangan lupa periksakan ke dokter segera yaa." << endl;
+            break;
+        case 5:
+            cout << "jadi ikut sedih denger kamu nggak sehat hari ini :( jangan capek-capek yaa, kalau parah jangan lupa periksakan kedokter segera yaa, kalau sudah dapat obatnya, jangan lupa diminum yaaa! aku tunggu kabar baiknyaa.)" << endl;
+            break;
+        default:
+            cout << "" << endl;
+}
+
+	    // Menghasilkan kalimat berdasarkan pilihan skala
+    switch (sibuk) {
+        case 1:
+            cout << "Kamu lagi luang waktunya kayaknya nih! pakai waktu luangmu ini dengan sebaik mungkin yaaa, bisa dipakai untuk istirahat atau melakukan hal-hal bermanfaat lainnyaa." << endl;
+            break;
+        case 2:
+            cout << "Oh iyaa, kalau lagi tidak sibuk jangan lupa untuk memanfaatkan waktumu dengan sesuatu yang bermanfaat yaa, istirahat contohnyaa."<< endl;
+            break;
+        case 3:
+            cout << "Kamu lagi antara sibuk dan enggak yaa? pintar-pintar mengatur waktu dan jangan lupaa diri kamu juga buuh istirahat hehehe." << endl;
+            break;
+        case 4:
+            cout << "Waah, kelihatannya kamu udah mulai sibuk yaa? jangan lupa skala prioritasnya yaa, biar kamu nggak capek-capek bengeet! dirimu juga butuh istirahat hihii." << endl;
+            break;
+        case 5:
+            cout << "Kamu lagi sibuk banger yaa? semoga segala urusan kamu berjalan dengan lancar dan dimudahkan yaa! jangan lupa istirahat yaa kalau capek, diri kamu jugaa berhargaa lhoo>" << endl;
+            break;
+        default:
+            cout << "" << endl;
+}
+
+	    // Menghasilkan kalimat berdasarkan pilihan skala
+    switch (makan) {
+        case 1:
+            cout << "Makan kamu hari ini pasti enak kaah? Seneng deh denger kalau kamu udah makan, tetap jaga yaa kebiasaan makan teratur yang kamu punya, biar sehat dan nggak gampang sakit hihii."<< endl;
+            break;
+        case 2:
+            cout << "Keren banget deh denger kamu udah makan, selalu makan teratur yaaa, sehat-sehat ya kamu." << endl;
+            break;
+        case 3:
+            cout << "Hayooo, kamu udah makan atau belum nih? kalau udah aku seneng deh dengernyaa, kalau belum jangan lupa makan yaaa!" << endl;
+            break;
+        case 4:
+            cout << "Eyy, jangan lupa makan lhoo! badan kamu butuh asupan, jadi sayangin diri kamu dengan memnuhi kebutuhannya yaa!" << endl;
+            break;
+        case 5:
+            cout << "Ya ampun, aku denger kamu belum makan ya hari ini? ayo makan dulu yaa, kalau sibuk jangan lupain makan yaa, yuk sayangin diri kamu, aku tunggu kabar kalau kamu udah makan yaaa." << endl;
+            break;
+        default:
+            cout << "Pilihan tidak valid." << endl;
+}
+
+    return 0;}
+    
